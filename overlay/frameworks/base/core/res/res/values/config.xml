@@ -371,4 +371,7 @@
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
+    <!-- Allow screen mirroring/miracast -->
+    <bool name="config_enableWifiDisplay">true</bool>
+
 </resources>

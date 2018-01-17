@@ -17,11 +17,10 @@
 */
 -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Support in Surfaceflinger for blur layers.
-         NOTE: This requires additional hardware-specific code. -->
-<!--    <bool name="config_uiBlurEnabled">true</bool> -->
-
-    <!-- Whether notify fingerprint client of successful cancelled authentication -->
-<!--    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool> -->
+<resources>
+    <string name="wfc_mode_wifi_preferred_summary">WLAN preferred</string>
+    <string-array name="wfcSpnFormats">
+        <item>%s</item>
+        <item>WLAN Call</item>
+    </string-array>
 </resources>

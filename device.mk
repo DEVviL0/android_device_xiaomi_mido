@@ -142,6 +142,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8953 \
@@ -209,6 +212,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-convert \
     android.hardware.health@1.0-service \
     android.hardware.health@1.0
+
+# HWUI
+$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # Input
 PRODUCT_COPY_FILES += \

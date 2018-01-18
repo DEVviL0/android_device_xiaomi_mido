@@ -9,6 +9,9 @@ dalvik.vm.image-dex2oat-filter=speed
 # Adreno
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
+#low audio flinger standby delay to reduce power consumption
+ro.audio.flinger_standbytime_ms=300
+
 # Audio
 vendor.voice.playback.conc.disabled=true
 vendor.voice.record.conc.disabled=false

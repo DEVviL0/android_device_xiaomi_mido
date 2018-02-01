@@ -210,6 +210,8 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
+    mount_all /vendor/etc/fstab.qcom
+
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used by display clients
@@ -422,7 +424,7 @@ on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 
     #Enable ZRAM on boot_complete
-    swapon_all fstab.qcom
+    swapon_all /vendor/etc/fstab.qcom
 
     #Reset read ahead for dm-0 and dm-1 to 512kb
     write /sys/block/dm-0/queue/read_ahead_kb 512

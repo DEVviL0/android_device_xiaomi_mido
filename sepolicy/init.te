@@ -1,0 +1,4 @@
+allow init smd_device:chr_file { ioctl write };
+allow init debugfs:file write;
+allow init vfat:dir mounton;
+allow init property_socket:sock_file write;

@@ -1,0 +1,12 @@
+allow hal_fingerprint_default fpc_sysfs:dir { open read search };
+allow hal_fingerprint_default fpc_sysfs:file { open read write };
+allow hal_fingerprint_default media_rw_data_file:dir { open read search };
+allow hal_fingerprint_default mnt_user_file:dir search;
+allow hal_fingerprint_default mnt_user_file:lnk_file read;
+allow hal_fingerprint_default sdcardfs:dir search;
+allow hal_fingerprint_default servicemanager:binder { call transfer };
+allow hal_fingerprint_default storage_file:dir search;
+allow hal_fingerprint_default storage_file:lnk_file read;
+allow hal_fingerprint_default tee_device:chr_file { ioctl open read write };
+allow hal_fingerprint_default uhid_device:chr_file { ioctl open write };
+allow hal_fingerprint_default vfat:file r_file_perms;

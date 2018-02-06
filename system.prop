@@ -21,6 +21,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.fluence.speaker=true
+persist.vendor.bt.enable.splita2dp=false
 audio.offload.disable=true
 vendor.audio.tunnel.encode=false
 vendor.audio.offload.buffer.size.kb=64
@@ -73,6 +74,8 @@ persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 debug.sf.hw=0
 debug.egl.hw=0
+debug.sf.latch_unsignaled=1
+sdm.debug.disable_skip_validate=1
 persist.hwc.mdpcomp.enable=true
 dalvik.vm.heapsize=36m
 debug.mdpcomp.logs=0
@@ -101,16 +104,10 @@ ro.fm.transmitter=false
 # Frp
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
-# GPS
-persist.gps.qc_nlp_in_use=1
-persist.loc.nlp_name=com.qualcomm.location
-ro.gps.agps_provider=1
-
 # Ims
 persist.dbg.volte_avail_ovr=1
 persist.radio.ROTATION_ENABLE=1
 persist.radio.VT_ENABLE=1
-persist.radio.VT_HYBRID_ENABLE=1
 persist.radio.VT_USE_MDM_TIME=0
 persist.dbg.vt_avail_ovr=1
 persist.volte_enabled_by_hw=1
@@ -134,7 +131,6 @@ persist.media.treble_omx=false
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.am.reschedule_service=true
 ro.sys.fw.dex2oat_thread_count=8
 
 # Netmgrd
